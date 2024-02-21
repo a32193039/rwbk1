@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html class="no-touch">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>${vo.title!}</title>
+    <meta name="referrer" content="always">
+    <meta name="keyword" content="${vo.content!}">
+    <meta name="description"
+          content="${description!}">
+    <link rel="shortcut icon" type="image/ico" href="https://ss1.360tres.com/static/121a1737750aa53d.ico">
+    <!--[if (!IE)|(gte IE 8.0)]><!-->
+    <link rel="stylesheet" href="./files/base_https_datauri.css"><!--<![endif]-->
+    <link rel="stylesheet" href="./files/72bfb9b561a41e56.css">
+    <link rel="stylesheet" href="./files/4f45163519b4b243.css">
+    <!--[if (lt IE 8.0)]>
+    <link href="bk/entry_base.css" rel=stylesheet><![endif]-->
+    <!--[if (!IE)|(gte IE 8.0)]><!-->
+    <link href="./files/entry_base_datauri.css" rel="stylesheet"><!--<![endif]--><!--[if (lt IE 8.0)]>
+    <link href="bk/doc.css" rel=stylesheet><![endif]-->
+    <!--[if (!IE)|(gte IE 8.0)]><!-->
+    <link href="./files/doc_datauri.css" rel="stylesheet"><!--<![endif]--><!--[if (lt IE 8.0)]>
+    <link href="bk/entry_plus.css" rel=stylesheet><![endif]-->
+    <!--[if (!IE)|(gte IE 8.0)]><!-->
+    <link href="./files/entry_plus_datauri.css" rel="stylesheet"><!--<![endif]-->
+</head>
+<body>
+<!--<div class="new-nav">
+    <div class="nav-bg">
+        <div class="nav-bg-top">
+            <div class="nav-content">
+                <div class="nav-content-box">
+                    <dl class="nav-content-box-dl nav-content-box-dl-hide">
+                        <dt class="nav-content-box-dt-color">
+                            <a class="nav-content-first-pointer" href="#/" data-log="nav-home" target="_blank">首页</a>
+                        </dt>
+                        <dd style="display:none"></dd>
+                    </dl>
+                    <a id="admsg" class="admsg" href="#"target="_blank"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>-->
+<div id="main" class="" style="">
+    <div class="entry-banner"></div>
+    <div class="entry-box wrap  ">
+        <div class="boxwrap cl js-entry-boxwrap  ">
+            <div class="boxinner-l htc-baike" id="baike-content">
+                <div class="entry-header">
+                    <div class="doc-tag-zone">
+                        <div class="essence-tag"></div>
+                    </div>
+                    <div id="baikecard" data-sub="#2017593-2135010-0">
+                        <a name="2017593-2135010-0"></a>
+                        <div id="baike-title">
+                            <h1>
+                                <span class="title">
+                                    <span class="">${vo.name!}</span>
+                                    <span class="sense"> - ${vo.zhiwei!}</span>
+                                </span>
+                                <span id="edit_op" class="opt js-edittext"> </span>
+                                <span class="opt"> </span>
+                             </h1>
+                        </div>
+                        <div class="card_content" id="js-card-content">
+                            <p>${vo.rwjj!}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="entry-detail js-entry-detail">
+                    <div style="position:relative">
+                        <div class="entry-detail-fold-part" style="max-height: 3000px; overflow: hidden;">
+                            <div class="entry-basic">
+                                <div id="basic-info"><a name="uni_baseinfo"></a>
+                                    <h2 class="titleH2"><span class="h2mark"></span>基本信息</h2>
+                                    <div class="card-list-box">
+                                        <ul class="cardlist">
+                                            <li>
+                                                <div class="cardlist-con"><p class="cardlist-name" title="中文名称">中文名称</p>
+                                                    <p class="cardlist-value" title="${vo.name!}"> ${vo.name!} </p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cardlist-con"><p class="cardlist-name" title="外文名称">外文名称</p>
+                                                    <p class="cardlist-value" title=" ${vo.wwname!} "> ${vo.wwname!}</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="cardlist">
+                                            <li>
+                                                <div class="cardlist-con"><p class="cardlist-name" title="毕业院校">毕业院校</p>
+                                                    <p class="cardlist-value" title=" ${vo.byyx!} "> ${vo.byyx!} </p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="cardlist-con"><p class="cardlist-name" title="代表作品">代表作品</p>
+                                                    <p class="cardlist-value" title=" ${vo.dbzp!} ">${vo.dbzp!}</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry-before"></div>
+                            <div class="entry-catalogue">
+                                <div class="entry-mod-catalogue">
+                                    <div class="catalogModWrap"><span class="h2mark"></span>
+                                        <table class="catalogMod" id="J-ext-mod-topcatalog">
+                                            <tbody>
+                                            <tr>
+                                                <th><span><em></em>目录</span></th>
+                                                <#assign array =vo.ml?split(",") >
+                                                <#if array[0]??><#assign one = array[0]></#if>
+                                                <#if array[1]??><#assign two = array[1]></#if>
+                                                <#if array[2]??><#assign three = array[2]></#if>
+                                                <#if array[3]??><#assign four = array[3]></#if>
+                                                <#if array[4]??><#assign five = array[4]></#if>
+                                                <#if array[5]??><#assign six = array[5]></#if>
+                                                <td class="listTd js-listTd" data-count="7">
+                                                    <div>
+                                                        <em>1</em>
+                                                        <a title="${one!}" href="#${one!}">${one!}</a>
+                                                    </div>
+                                                    <div>
+                                                        <em>2</em>
+                                                        <a title="${two!}" href="#${two!}">${two!}</a>
+                                                    </div>
+                                                    <div>
+                                                        <em>3</em>
+                                                        <a title="${three!}" href="#${three!}">${three!}</a>
+                                                    </div>
+                                                </td>
+                                                <td class="listTd">
+                                                    <#if four?has_content>
+                                                    <div>
+                                                        <em>4</em>
+                                                        <a title="${four!}" href="#${four!}">${four!}</a>
+                                                    </div>
+                                                    </#if>
+                                                    <#if four?has_content>
+                                                    <div>
+                                                        <em>5</em>
+                                                        <a title="${five!}" href="#${five!}">${five!}</a>
+                                                    </div>
+                                                    </#if>
+                                                    <#if four?has_content>
+                                                    <div>
+                                                        <em>6</em>
+                                                        <a title="${six!}" href="#${six!}">${six!}</a>
+                                                    </div>
+                                                    </#if>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry-body"></div>
+                            <div class="entry-content">
+                                <div id="lemma-main" class="lemma-meaning" data-sub="">
+                                    <div class="main_content_text cl" id="main-content-text">
+                                        <div name="mk">
+                                            <h2>
+                                                <b class="title">${one!}</b>
+                                            </h2>
+                                            <div class="sonConBox ">
+                                                <div class="h3_content">
+                                                    <p>
+                                                        ${vo.content1!}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div name="mk">
+                                            <h2>
+                                                <b class="title">${two!}</b>
+                                            </h2>
+                                            <div class="sonConBox ">
+                                                <div class="h3_content">
+                                                    <p>
+                                                        ${vo.content2!}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div name="mk">
+                                            <h2>
+                                                <b class="title">${three!}</b>
+                                            </h2>
+                                            <div class="sonConBox ">
+                                                <div class="h3_content">
+                                                    <p>
+                                                        ${vo.content3!}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div name="mk">
+                                            <h2>
+                                                <b class="title">${four!}</b>
+                                            </h2>
+                                            <div class="sonConBox ">
+                                                <div class="h3_content">
+                                                    <p>
+                                                        ${vo.content4!}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div name="mk">
+                                            <h2>
+                                                <b class="title">${five!}</b>
+                                            </h2>
+                                            <div class="sonConBox ">
+                                                <div class="h3_content">
+                                                    <p>
+                                                        ${vo.content5!}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div name="mk">
+                                            <h2>
+                                                <b class="title">${six!}</b>
+                                            </h2>
+                                            <div class="sonConBox ">
+                                                <div class="h3_content">
+                                                    <p>
+                                                        ${vo.content6!}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h2>
+                                            <b class="title">主要成就</b>
+                                        </h2>
+                                        <div class="sonConBox ">
+                                            <div class="h2_content">
+                                                ${vo.dsnb!}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="entry-belong">
+                        <div class="entry-tags-box">
+                            <div class="entry-tags-title">词条标签</div>
+                            <div class="entry-tags-item">
+                                <#assign array =vo.ctbq?split(",") >
+                                <#list array as item>
+                                <a href="#" data-logid="baike-tag" target="_blank">${item}</a>
+                                </#list>
+
+                            </div>
+                        </div>
+                        <div class="mod-recommend" id="js-doc-recommand" style="display: block;">
+                            <div class="mod-recommend-hd"><h2>为您推荐</h2></div>
+                            <div class="mod-recommend-bd">
+                                <ul id="recommend" class="clearfix" data-so-biz-monitor-recommend="1"
+                                    style="font-size: 0px;">
+                                    <#if rw?has_content>
+                                    <#list rw as item>
+                                    <li data-so-biz-type="recommend" data-so-biz-pn="1" data-so-biz-index="0"
+                                        data-so-biz-pos="1,0" class="so-biz-text-link so-biz-text-link__block"
+                                        data-so-biz-recommend-disp-item="1">
+                                        <a class="so-biz-text-link_a"
+                                           href="${item.id!}.html"
+                                           data-dtype="zhinao_ex" data-log="s-search-recommend-ad-click"
+                                           target="_blank">${item.name!}</a>
+                                    </li>
+                                    </#list>
+                                    </#if>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boxinner-r-bg"></div>
+            <div class="boxinner-r">
+                <div id="card-image">
+                    <div class="img">
+                        <a data-type="gallery" href="#" target="_blank" data-index="0">
+                            <img id="js-entry-image" class="pic" width="270"
+                                                             src="${vo.txurl!}"
+                                                             alt="${vo.name!}" title="">
+                        </a>
+                    </div>
+                    <div class="desc">
+                        <a id="entry_search_url"
+                                         href="#"
+                                         target="_blank">${vo.name!}
+                        </a>
+                    </div>
+                    <div class="bline1"></div>
+                    <div class="bline2"></div>
+                </div>
+                <div id="weiboshow"></div>
+                <div class="right_high_top"></div>
+
+                <div id="J-mod-hot-rank">
+                    <div class="rtBox doc-hot-rank">
+                        <div class="title"><h2 class="text">人物新闻</h2></div>
+                        <div id="J-mod-hot-rank-content" class="hot-rank-content">
+                            <ul>
+                                <li>
+                                    <i class="number-icon">1</i>
+                                    <a href="https://new.qq.com/rain/a/20211106A08B6M00"
+                                       data-logid="J-sshot-ranking" target="_blank">刚出炉！江西首富是他！</a>
+                                    <i class="new-up-icon"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="entry-footer wrap "></div>
+</div>
+<div id="footer">
+
+
+</div>
+
+</body>
+</html>
